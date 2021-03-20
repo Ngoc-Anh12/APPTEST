@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top_bottom_small">4dp</dimen>
+    <dimen name="margin_top_bottom_normal">8dp</dimen>
+    <dimen name="margin_top_bottom_large">16dp</dimen>
+
+    <dimen name="margin_top_small">24dp</dimen>
+    <dimen name="margin_top_normal">28dp</dimen>
+    <dimen name="margin_top_large">28dp</dimen>
+
+    <dimen name="margin_left_small">15dp</dimen>
+    <dimen name="margin_left_normal">20dp</dimen>
+    <dimen name="margin_left_large">30dp</dimen>
+
+    <dimen name="margin_right_small">15dp</dimen>
+    <dimen name="margin_right_normal">20dp</dimen>
+    <dimen name="margin_right_large">30dp</dimen>
+
+    <!--button-->
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_margin_left">20dp</dimen>
+    <dimen name="btn_margin_right">20dp</dimen>
+
+    <!--text size-->
+    <dimen name="smaller_text_view_size">10sp</dimen>
+    <dimen name="small_text_view_size">12sp</dimen>
+    <dimen name="normal_text_view_size">16sp</dimen>
+    <dimen name="large_text_view_size">30sp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_large">15dp</dimen>
+</resources>

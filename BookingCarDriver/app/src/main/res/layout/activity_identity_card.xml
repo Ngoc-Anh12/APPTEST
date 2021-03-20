@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_title_identity_card"
+                android:textColor="@color/yellow"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="34sp"
+                android:text="@string/identity_card"
+                android:layout_marginTop="@dimen/margin_top_bottom_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edt_first_last_name"
+                android:background="@drawable/rounded_edit_text"
+                android:hint="@string/first_and_last_name"
+                android:inputType="text"
+                android:padding="@dimen/paddingNormal"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:layout_marginRight="@dimen/margin_right_normal"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_identity_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edt_date_of_birth"
+                android:hint="@string/date_of_birth"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="text"
+                android:padding="@dimen/paddingNormal"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:layout_marginRight="@dimen/margin_right_normal"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_first_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:hint="@string/address"
+                android:inputType="text"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="@dimen/paddingNormal"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:layout_marginRight="@dimen/margin_right_normal"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edt_identity_card"
+                android:hint="@string/identity_card"
+                android:inputType="text"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="@dimen/paddingNormal"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:layout_marginRight="@dimen/margin_right_normal"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_front_img"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:text="@string/front_view_image"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_identity_card" />
+
+            <ImageView
+                android:id="@+id/img_front_img_identity_card"
+                android:background="@color/light_gray"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:layout_marginRight="@dimen/margin_right_normal"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_front_img"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:id="@+id/tv_back_"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="@string/back_view_image"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_front_img_identity_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/img_back_view_identity_card"
+                android:background="@color/light_gray"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:layout_marginRight="@dimen/margin_right_normal"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_back_"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_save_identity_card"
+                android:text="@string/save"
+                android:background="@drawable/rounded_btn"
+                android:layout_marginTop="@dimen/margin_top_bottom_normal"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_back_view_identity_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

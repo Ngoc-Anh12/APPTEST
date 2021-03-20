@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:translationZ="3dp"
+    tools:context=".search.SearchActivity"
+    android:layout_marginLeft="@dimen/margin_top_bottom_large">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_customer"
+            android:layout_marginStart="4dp"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black"
+            android:text="Mai Van Hung"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:id="@+id/tv_cash"
+            android:textColor="@color/black"
+            android:text="100,000 VND"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:text="10km"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_distance"
+            android:background="#CACACA" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginLeft="@dimen/margin_top_bottom_small"
+            android:textColor="@color/black"
+            android:text="21:10 - 23:40 Ngay 01/03/2021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pick_up_point"
+            android:text="Diem don:"
+            android:layout_marginTop="@dimen/margin_top_bottom_normal"
+            android:layout_marginLeft="@dimen/margin_top_bottom_small"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="144 duong chien thang tan trieu"
+            android:layout_marginLeft="@dimen/margin_top_bottom_normal"
+            app:layout_constraintStart_toEndOf="@id/tv_pick_up_point"
+            app:layout_constraintBottom_toBottomOf="@id/tv_pick_up_point"
+            app:layout_constraintTop_toTopOf="@id/tv_pick_up_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_destination"
+            android:text="Diem den:"
+            android:layout_marginTop="@dimen/margin_top_bottom_normal"
+            android:layout_marginLeft="@dimen/margin_top_bottom_small"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_pick_up_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Nga tu so"
+            android:layout_marginLeft="@dimen/margin_top_bottom_normal"
+            app:layout_constraintStart_toEndOf="@id/tv_pick_up_point"
+            app:layout_constraintBottom_toBottomOf="@id/tv_destination"
+            app:layout_constraintTop_toTopOf="@id/tv_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_destination"
+            android:background="#CACACA" />
+
+        <TextView
+            android:id="@+id/tv_type_car"
+            android:text="Xe 5 cho"
+            android:layout_marginTop="@dimen/margin_top_bottom_normal"
+            android:layout_marginLeft="@dimen/margin_top_bottom_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_amount_person"
+            android:text="2 Nguoi"
+            android:layout_marginLeft="@dimen/margin_top_bottom_large"
+            app:layout_constraintBottom_toBottomOf="@id/tv_type_car"
+            app:layout_constraintTop_toTopOf="@id/tv_type_car"
+            app:layout_constraintStart_toEndOf="@id/tv_type_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_take_trip"
+            style="@style/ButtonText"
+            android:text="Nhan chuyen"
+            android:layout_marginTop="@dimen/margin_top_bottom_normal"
+            android:background="@drawable/rounded_btn"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="30dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

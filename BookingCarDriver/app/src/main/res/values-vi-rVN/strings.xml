@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Booking Car Driver</string>
+    <string name="log_in">Đăng nhập</string>
+    <string name="register">Đăng kí</string>
+    <string name="save">Lưu thông tin</string>
+
+    <string name="bottom_navigation_home">Trang chủ</string>
+    <string name="bottom_navigation_search">Tìm kiếm</string>
+    <string name="bottom_navigation_notification">Thông báo</string>
+    <string name="bottom_navigation_account">Tài khoản</string>
+
+    <string name="phone_number">Số điện thoại</string>
+    <string name="pass_word">Mật khẩu</string>
+    <string name="show_pass_word">Hiển thị mật khẩu</string>
+    <string name="confirm_pass_word">Xác nhận mật khẩu</string>
+
+    <string name="first_and_last_name"> Họ và tên </string>
+    <string name="address">Địa chỉ</string>
+    <string name="date_of_birth">Ngày sinh</string>
+    <string name="front_view_image">Ảnh mặt trước</string>
+    <string name="back_view_image"> Ảnh mặt sau </string>
+
+    <string name="keep_login">Lưu mật khẩu</string>
+    <string name="identity_card">Chứng minh nhân dân</string>
+    <string name="driving_license">Bằng lái xe</string>
+    <string name="license_plates">Biển số xe</string>
+    <string name="vehicle_registration_certificate">Giấy đăng ký xe</string>
+    <string name="vehicle_registration">Giấy đăng kiểm xe</string>
+    <string name="civil_liability_insurance">Giấy bảo hiểm trách nhiệm dân sự</string>
+    <string name="contract_car_badge">Phù hiệu xe hợp đồng</string>
+</resources>

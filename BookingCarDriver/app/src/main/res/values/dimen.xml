@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="filled_stroke">1dp</dimen>
+    <dimen name="filled_round">4dp</dimen>
+    //text
+    <dimen name="text_size">24sp</dimen>
+
+    //margin
+    <dimen name="margin_top_bottom_small">4dp</dimen>
+    <dimen name="margin_top_bottom_normal">10dp</dimen>
+    <dimen name="margin_top_bottom_large">16dp</dimen>
+    <dimen name="margin_left_large">20dp</dimen>
+    <dimen name="margin_left_normal">10dp</dimen>
+    <dimen name="margin_right_normal">10dp</dimen>
+    <dimen name="margin_right_large">20dp</dimen>
+
+    //text view
+    <dimen name="smaller_text_view_size">10sp</dimen>
+    <dimen name="small_text_view_size">12sp</dimen>
+    <dimen name="normal_text_view_size">14sp</dimen>
+    <dimen name="large_text_view_size">16sp</dimen>
+    <dimen name="larger_text_view_size">18sp</dimen>
+
+    //padding and margin
+    <dimen name="paddingSmall">4dp</dimen>
+    <dimen name="paddingNormal">10dp</dimen>
+    <dimen name="paddingLarge">16dp</dimen>
+    <dimen name="padding_item_vert">5dp</dimen>
+    <dimen name="padding_item_horz">5dp</dimen>
+    <dimen name="margin_area_vert">25dp</dimen>
+
+    <dimen name="margin_item_vert">10dp</dimen>
+    <dimen name="margin_item_horz">15dp</dimen>
+
+    //text size
+    <dimen name="text_size_header">18sp</dimen>
+    <dimen name="text_size_sub_header">16sp</dimen>
+    <dimen name="text_size_title">14sp</dimen>
+    <dimen name="text_size_normal">12sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+
+    //button size
+    <dimen name="button_width_normal">120dp</dimen>
+    <dimen name="button_height_normal">50dp</dimen>
+    <dimen name="button_width_small">100dp</dimen>
+    <dimen name="button_height_small">30dp</dimen>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.RegisterActivity">
+    <ImageButton
+        android:id="@+id/image_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/iv_back_description"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_login"
+        android:textColor="@color/blue_end"
+        android:textSize="@dimen/large_text_view_size"
+        android:text="@string/register_title"
+        android:layout_marginTop="@dimen/margin_top_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_text_username"
+        android:textSize="@dimen/normal_text_view_size"
+        android:inputType="text"
+        android:hint="@string/text_username"
+        android:padding="@dimen/padding_normal"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:background="@color/background_edit_text"
+        android:layout_marginTop="@dimen/margin_top_small"
+        android:layout_marginRight="@dimen/margin_right_normal"
+        android:layout_marginLeft="@dimen/margin_left_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_pass"
+        android:textSize="@dimen/normal_text_view_size"
+        android:inputType="textPassword"
+        android:hint="@string/text_pass"
+        android:padding="@dimen/padding_normal"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:background="@color/background_edit_text"
+        android:layout_marginTop="@dimen/margin_top_small"
+        android:layout_marginRight="@dimen/margin_right_normal"
+        android:layout_marginLeft="@dimen/margin_left_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:textSize="@dimen/normal_text_view_size"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:text="@string/register_title"
+        android:background="@drawable/btn_gradient"
+        android:layout_marginTop="@dimen/margin_top_small"
+        android:layout_marginRight="@dimen/margin_right_normal"
+        android:layout_marginLeft="@dimen/margin_left_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

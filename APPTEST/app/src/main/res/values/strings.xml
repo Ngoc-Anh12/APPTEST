@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="login_title"> Login</string>
+    <string name="register_title">Register</string>
+
+    <!--text hint-->
+    <string name="text_username">User name</string>
+    <string name="text_pass">Password</string>
+
+    <string name="iv_back_description">Back</string>
+</resources>
